@@ -4,34 +4,48 @@ import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Svg: JSX.Element;
   description: JSX.Element;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Free to Explore',
+    Svg: (
+        <div style={{textAlign: 'center'}}>
+          <img src= {require('@site/static/img/pepe_astronaut.jpeg').default} width="300" height="300" alt="JPEG Image" />
+        </div>
+      ), 
     description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
+      <ul>
+        <li> Limitless indicators for free. </li>
+        <li> Optimize and backtest strategies for free. </li>
+        <li> Second-level resolution for free. </li>
+      </ul>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Deploy with One Click',
+    Svg: (
+        <div style={{textAlign: 'center'}}>
+          <img src= {require('@site/static/img/pepe_trader.jpeg').default} width="300" height="300" alt="JPEG Image" />
+        </div>
+      ), 
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
+        <ul>
+        <li> Deploy profitable strategies in real time. </li>
+        <li> Only $10/month for each strategy. </li>
+        <li> Second-level resolution for free. </li>
+      </ul>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Powered by Open Source',
+    Svg: (
+        <div>
+          <img src="/path/to/your/image.jpg" alt="JPEG Image" />
+        </div>
+      ), 
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -44,10 +58,8 @@ const FeatureList: FeatureItem[] = [
 function Feature({title, Svg, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
+      <p>{Svg}</p>
+      <div className="padding-horiz--md" style={{textAlign: 'left'}}>
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
