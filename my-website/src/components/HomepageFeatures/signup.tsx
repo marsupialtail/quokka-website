@@ -5,8 +5,29 @@ const SignupForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your signup logic here
-    console.log('User signed up with email:', email);
+
+    // Send email to Cloudflare Worker
+    fetch('https://vivcxetohwncxos36rzy4xr5yq0biado.lambda-url.us-west-2.on.aws/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ "email": email }),
+    })
+      .then((response) => {
+        if (response.ok) {
+          console.log('Email successfully sent to google sheets');
+          // Add any success logic here
+        } else {
+          console.error('Error sending email to google sheets');
+          // Add any error handling logic here
+        }
+      })
+      .catch((error) => {
+        console.error('Error sending email to google sheets:', error);
+        // Add any error handling logic here
+      });
+
     setEmail('');
   };
 
