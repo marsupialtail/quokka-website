@@ -16,15 +16,15 @@ const SignupForm = () => {
     })
       .then((response) => {
         if (response.ok) {
-          console.log('Email successfully sent to google sheets');
+          // console.log('Email successfully sent to google sheets');
           // Add any success logic here
         } else {
-          console.error('Error sending email to google sheets');
+          // console.error('Error sending email to google sheets');
           // Add any error handling logic here
         }
       })
       .catch((error) => {
-        console.error('Error sending email to google sheets:', error);
+        // console.error('Error sending email to google sheets:', error);
         // Add any error handling logic here
       });
 
