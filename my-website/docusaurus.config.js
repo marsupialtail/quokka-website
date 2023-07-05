@@ -63,7 +63,7 @@ const config = {
         title: 'Rottnest',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/rottnest.png',
+          src: 'img/rottnest.ico',
         },
         items: [
           {
@@ -113,10 +113,10 @@ const config = {
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Rottnest Computing, Inc.`,
       },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
+      // prism: {
+      //   theme: lightCodeTheme,
+      //   darkTheme: darkCodeTheme,
+      // },
     }),
 };
 

@@ -1,3 +1,8 @@
+.pepe1{
+  transform: translateX(300px);
+  transform: rotate(45deg);
+}
+
 .features {
   display: flex;
   align-items: center;
@@ -8,4 +13,47 @@
 .featureSvg {
   height: 200px;
   width: 200px;
+}
+
+input[type=email]{
+  border-radius: 20px;
+  border-radius: 100px;
+  border: 1px solid #000;
+  background: transparent;
+  width: 338px;
+  height: 55px;
+}
+
+button[type=submit] {
+  /* padding: 10px 20px; */
+  border-radius: 50px;
+  background-color: #151515;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: "DM Sans";
+  width: 338px;
+  height: 75px;
+}
+
+button[type=submit]:hover {
+  background-color: #303030;
+}
+
+input::placeholder {
+  color: #464646;
+  padding: 10px;
+  font-size: 20px;
+  font-family: DM Sans;
+}
+
+p {
+  max-width: 1200px;
+}
+
+h3 {
+  font-family: "DM Sans";
+  font-size: 34px;
 }

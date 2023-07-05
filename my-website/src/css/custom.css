@@ -29,6 +29,15 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+@font-face {
+  font-family: 'DM Sans';
+  src: url('https://fonts.googleapis.com/css?family=DM+Sans');
+}
+
+h1, div {
+  font-family: 'DM Sans';
+}
+
 .signup_container {
     display: flex;
     flex-direction: column;
@@ -60,14 +69,9 @@
     width: 300px;
   }
   
-  button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
+  .gradient {
+    width: 100%; /* Adjust width as needed */
+    height: 100%; /* Adjust height as needed */
+    background-image: linear-gradient(to right, #797FFE, #3CEB80);
+    position: relative;
   }

@@ -17,10 +17,10 @@ const SignupForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Email:
-        <input type="email" value={email} onChange={handleChange} required />
+        {/* Email */}
+        <input type="email" value={email} onChange={handleChange} required placeholder="Email"/>
       </label>
-      <button type="submit">Sign Up</button>
+      <button type="submit">Join the waitlist</button>
     </form>
   );
 };
