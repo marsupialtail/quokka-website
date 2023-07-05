@@ -22,7 +22,7 @@ const ScrollThroughValues: React.FC<{ values: string[] }> = ({ values }) => {
     }, [values]);
   
     return (
-      <span className="" style={{ color: '#0F0F0F', fontSize: '48px' }}>
+      <span className="" style={{ color: '#00D802', fontSize: '48px' }}>
       {values[currentIndex]}
       </span>  
     );
@@ -44,7 +44,7 @@ function HomepageHeader() {
 
       <div className = "column">
       <h1
-        style={{ lineHeight: '1.3',  marginLeft: '2em', marginTop:"2em", marginRight: "10px", fontSize: '48px', fontWeight:"normal" }}>
+        style={{ lineHeight: '1.3',  marginLeft: '2em', marginTop:"2em", marginRight: "10px", fontSize: '48px', fontWeight:"Bold" }}>
         The professional<br />
         <ScrollThroughValues
           values={['futures', 'stocks', 'crypto', 'options']}

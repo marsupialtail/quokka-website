@@ -45,20 +45,8 @@ export default {
         "alt": "My Site Logo",
         "src": "img/rottnest.ico"
       },
-      "items": [
-        {
-          "type": "docSidebar",
-          "sidebarId": "tutorialSidebar",
-          "position": "left",
-          "label": "Why we built it"
-        },
-        {
-          "to": "/blog",
-          "label": "Blog",
-          "position": "left"
-        }
-      ],
-      "hideOnScroll": false
+      "hideOnScroll": false,
+      "items": []
     },
     "footer": {
       "style": "dark",
