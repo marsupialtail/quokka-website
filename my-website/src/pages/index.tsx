@@ -65,8 +65,8 @@ function HomepageHeader() {
       <div style={{ textAlign: 'right', marginTop: "20px", marginLeft: 'auto', marginRight: '-20px' }}>
           <img
             src={require('@site/static/img/mockup.png').default}
-            width="900"
-            height="600"
+            width="1000"
+            height="700"
             // 1000 x 670
             alt="Mockup Image"
           />

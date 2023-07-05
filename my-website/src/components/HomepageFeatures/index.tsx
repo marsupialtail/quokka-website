@@ -22,12 +22,14 @@ const FeatureList: FeatureItem[] = [
         </div>
       ), 
     description: (
+      <div  style={{textAlign: 'left'}}>
       <ul>
         <li><b>Unlimited</b> indicators and charts, for free.</li>
         <li>Build strategies, backtest on <b>unlimited</b> bars, optimize parameters, for free.</li>
         <li>Detect complex patterns in seconds <u>with PhD research</u>, no scripting required.</li>
         <li>Second-level resolution for $15 a month.</li>
       </ul>
+      </div>
     ),
   },
   {
@@ -38,10 +40,12 @@ const FeatureList: FeatureItem[] = [
         </div>
       ), 
     description: (
+      <div  style={{textAlign: 'left'}}>
       <ul>
         <li> Deploy profitable strategies with one click to Interactive Brokers, Coinbase or even Uniswap! </li>
         <li> Flexible pricing scheme -- fixed cost per strategy or free until profits </li>
       </ul>
+      </div>
     ),
   },
   {
@@ -52,11 +56,13 @@ const FeatureList: FeatureItem[] = [
         </div>
       ), 
     description: (
+      <div  style={{textAlign: 'left'}}>
      <ul>
         <li> Built with love by Stanford and NUST PhD students and experienced traders. </li>
         <li> Tools used by professional trading firms. </li>
         <li>Read <a href="">why</a> we are making Rottnest.</li>
       </ul>
+      </div>
     ),
   },
 ];
