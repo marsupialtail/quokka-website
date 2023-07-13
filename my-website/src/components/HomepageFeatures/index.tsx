@@ -79,7 +79,7 @@ const ChartList: ChartItem[] = [
     title: 'Why pay $50 a month for a shovel when you can get a sledgehammer for $15?',
     Svg: (
         <div>
-          <img src= {require('@site/static/img/comparison-table.png').default} alt="JPEG Image" style={{maxWidth: "100%", maxHeight: "100%", marginLeft: "auto", marginRight: "auto"}}/>
+          <img src= {require('@site/static/img/comparison-table.png').default} alt="JPEG Image" style={{width: "1400", maxHeight: "100%", marginLeft: "auto", marginRight: "auto"}}/>
         </div>
       )
   },

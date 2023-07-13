@@ -44,7 +44,7 @@ function HomepageHeader() {
 
       <div className = "column">
       <h1
-        style={{ lineHeight: '1.3',  marginLeft: '15%', marginTop:"15%", marginRight: "0%", fontSize: '48px', fontWeight:"Bold" }}>
+        style={{ lineHeight: '1.3',  marginLeft: '13%', marginTop:"15%", fontSize: '48px', fontWeight:"Bold" }}>
         The professional<br />
         <ScrollThroughValues
           values={['futures', 'stocks', 'crypto', 'options']}
