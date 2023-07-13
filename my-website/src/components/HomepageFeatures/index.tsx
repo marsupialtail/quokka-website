@@ -2,6 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 
+
 type FeatureItem = {
   title: string;
   Svg: JSX.Element;
@@ -17,9 +18,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'Free to Explore',
     Svg: (
-        <div style={{textAlign: 'center'}}>
-          <img src= {require('@site/static/img/pepe_astronaut_rounded.png').default} width="300" height="300" alt="JPEG Image" />
-        </div>
+          <img src= {require('@site/static/img/pepe_astronaut_rounded.png').default} width="300" height="300" alt="JPEG Image" style= {{marginLeft: "auto", marginRight: "auto"}}/>
       ), 
     description: (
       <div  style={{textAlign: 'left'}}>
@@ -35,9 +34,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'Deploy with One Click',
     Svg: (
-        <div style={{textAlign: 'center'}}>
-          <img src= {require('@site/static/img/pepe_trader_rounded.jpeg').default} width="300" height="300" alt="JPEG Image" />
-        </div>
+          <img src= {require('@site/static/img/pepe_trader_rounded.jpeg').default} width="300" height="300" alt="JPEG Image" style= {{marginLeft: "auto", marginRight: "auto"}}/>
       ), 
     description: (
       <div  style={{textAlign: 'left'}}>
@@ -51,9 +48,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'Built by PhDs and Professionals',
     Svg: (
-        <div style={{textAlign: 'center'}}>
-          <img src={require('@site/static/img/pepe_phd_rounded.png').default} width="300" height="300" alt="JPEG Image"/>
-        </div>
+          <img src={require('@site/static/img/pepe_phd_rounded.png').default} width="300" height="300" alt="JPEG Image" style= {{marginLeft: "auto", marginRight: "auto"}}/>
       ), 
     description: (
       <div  style={{textAlign: 'left'}}>
@@ -71,7 +66,7 @@ function Feature({title, Svg, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <p>{Svg}</p>
-      <div className="padding-horiz--md" style={{textAlign: 'left'}}>
+      <div className="padding-horiz--md" style={{marginLeft: "auto", marginRight: "auto", marginBottom: "10%", textAlign: 'center', maxWidth: "80%"}}>
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
@@ -84,7 +79,7 @@ const ChartList: ChartItem[] = [
     title: 'Why pay $50 a month for a shovel when you can get a sledgehammer for $15?',
     Svg: (
         <div>
-          <img src= {require('@site/static/img/comparison-table.png').default} alt="JPEG Image" />
+          <img src= {require('@site/static/img/comparison-table.png').default} alt="JPEG Image" style={{minWidth: "100%", minHeight: "100%", marginLeft: "auto", marginRight: "auto"}}/>
         </div>
       )
   },
@@ -103,7 +98,7 @@ function Chart({title, Svg}: ChartItem) {
 
 export default function HomepageFeatures(): JSX.Element {
   return (
-    <section className="gradient">
+    <section className="gradient" style= {{ overflowX: "hidden", width: "100%"}}>
       <div className="row"
       style={{
         paddingTop: "100px",
@@ -111,20 +106,20 @@ export default function HomepageFeatures(): JSX.Element {
       }}>
 
       {/* Pepe Bill */}
-      <div style={{ transform: "translate(-200px, -100px) rotate(-10deg)" }}>      
+      <div style={{ transform: "translate(-200px, -50px) rotate(-10deg)" }}>      
         <img src= {require('@site/static/img/pepe-bill.png').default} width="493" height="208" alt="JPEG Image"/>
       </div>
    
    <section className={styles.features}>
         <div className="container">
-          <div className="row">
+          <div className="row"> 
             {FeatureList.map((props, idx) => (
               <Feature key={idx} {...props} />
             ))}
           </div>
 
-      {/* Pepe Bill */}
-      <div style={{ transform: "translate(1100px, 200px) rotate(15deg)" }}>      
+      {/* Pepe Bill */} 
+      <div style={{ transform: "translateX(100%) translate(-200px, 100px) rotate(15deg)" }}>      
         <img src= {require('@site/static/img/pepe-bill.png').default} width="493" height="208" alt="JPEG Image"/>
       </div>
 
@@ -135,17 +130,19 @@ export default function HomepageFeatures(): JSX.Element {
           </div>
 
       {/* Pepe Bill */}
-      <div style={{ transform: "translate(-300px, 200px) rotate(24deg)" }}>      
+      <div style={{transform: "translate(-300px, 200px) rotate(24deg)" }}>      
         <img src= {require('@site/static/img/pepe-bill.png').default} width="493" height="208" alt="JPEG Image"/>
       </div>
 
             {/* Pepe Bill */}
-            <div style={{ transform: "translate(-500px,-400px) rotate(-87deg)" }}>      
+            {/* translate(-500px,-400px) */}
+            <div style={{transform: "translate(-500px, -400px) rotate(-87deg)" }}>      
         <img src= {require('@site/static/img/pepe-bill.png').default} width="493" height="208" alt="JPEG Image"/>
       </div>
 
             {/* Pepe Bill */}
-            <div style={{ transform: "translate(1000px,-500px) rotate(-39deg)" }}>      
+            {/* translate(1000px,-500px)  */}
+            <div style={{transform:  "translateX(100%) translate(-200px, -300px) rotate(-15deg)" }}>      
         <img src= {require('@site/static/img/pepe-bill.png').default} width="493" height="208" alt="JPEG Image"/>
       </div>
 

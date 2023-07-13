@@ -31,7 +31,7 @@ const ScrollThroughValues: React.FC<{ values: string[] }> = ({ values }) => {
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <div className="gradient">
+    <div className="gradient" style= {{ overflowX: "hidden", width: "100%"}}>
     <div
       className="row"
       style={{
@@ -44,7 +44,7 @@ function HomepageHeader() {
 
       <div className = "column">
       <h1
-        style={{ lineHeight: '1.3',  marginLeft: '2em', marginTop:"2em", marginRight: "10px", fontSize: '48px', fontWeight:"Bold" }}>
+        style={{ lineHeight: '1.3',  marginLeft: '15%', marginTop:"15%", marginRight: "0%", fontSize: '48px', fontWeight:"Bold" }}>
         The professional<br />
         <ScrollThroughValues
           values={['futures', 'stocks', 'crypto', 'options']}
@@ -52,11 +52,9 @@ function HomepageHeader() {
         trading platform<br />
         for every Pepe
       </h1>
-        <div className="row">
-          <div className="signup_container" style={{ lineHeight: '1.2',  marginTop: '1em', marginLeft: '3em', fontSize: '40px' }}>
+          <div className="signup_container" style={{ lineHeight: '1.2',  marginTop: '10%', marginBottom: "10%", fontSize: '40px' }}>
           <div style={{ fontSize: '28px', marginBottom: '20px', marginTop: '20px' }}>
             <SignupForm />
-          </div>
         </div> 
       </div>
       </div>
@@ -67,7 +65,6 @@ function HomepageHeader() {
             src={require('@site/static/img/mockup.png').default}
             width="1000"
             height="700"
-            // 1000 x 670
             alt="Mockup Image"
           />
         </div>
