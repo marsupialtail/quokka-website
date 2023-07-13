@@ -4,6 +4,17 @@
  * work well for content-centric websites.
  */
 
+ @font-face {
+  font-family: 'DM Sans';
+  src: url('https://fonts.googleapis.com/css?family=DM+Sans');
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2e8555;
@@ -29,10 +40,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-@font-face {
-  font-family: 'DM Sans';
-  src: url('https://fonts.googleapis.com/css?family=DM+Sans');
-}
 
 h1, div {
   font-family: 'DM Sans';
