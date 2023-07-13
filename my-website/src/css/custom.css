@@ -6,7 +6,9 @@
 
  @font-face {
   font-family: 'DM Sans';
-  src: url('https://fonts.googleapis.com/css?family=DM+Sans');
+  src: url('https://fonts.googleapis.com/css?family=DM+Sans'),    
+       url('@site/static/fonts/dmsans-regular-webfont.woff2') format('woff2'), 
+       url('@site/static/fonts/dmsans-regular-webfont.woff') format('woff')
 }
 
 html {
