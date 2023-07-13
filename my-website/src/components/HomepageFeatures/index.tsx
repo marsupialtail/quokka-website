@@ -79,7 +79,7 @@ const ChartList: ChartItem[] = [
     title: 'Why pay $50 a month for a shovel when you can get a sledgehammer for $15?',
     Svg: (
         <div>
-          <img src= {require('@site/static/img/comparison-table.png').default} alt="JPEG Image" style={{width: "1400px", maxHeight: "100%", marginLeft: "auto", marginRight: "auto"}}/>
+          <img src= {require('@site/static/img/comparison-table.png').default} alt="JPEG Image" style={{width: "91%", marginLeft: "auto", marginRight: "auto"}}/>
         </div>
       )
   },
@@ -90,7 +90,7 @@ function Chart({title, Svg}: ChartItem) {
     // <div className={clsx('row justify-content-center')}>
     <div>
       <h3 style={{textAlign: 'center', padding: "100px"}} >{title}</h3>
-      <p  style={{textAlign: 'center', paddingLeft: "50px"}}>{Svg}</p>
+      <p>{Svg}</p>
    </div>
   );``
 }
