@@ -78,19 +78,18 @@ const ChartList: ChartItem[] = [
   {
     title: 'Why pay $50 a month for a shovel when you can get a sledgehammer for $15?',
     Svg: (
-        <div>
-          <img src= {require('@site/static/img/comparison-table.png').default} alt="JPEG Image" style={{width: "91%", marginLeft: "auto", marginRight: "auto"}}/>
-        </div>
+        <img src= {require('@site/static/img/comparison-table.png').default} alt="JPEG Image"/>
       )
   },
 ];
 
+
+
 function Chart({title, Svg}: ChartItem) {
   return (
-    // <div className={clsx('row justify-content-center')}>
     <div>
       <h3 style={{textAlign: 'center', padding: "100px"}} >{title}</h3>
-      <p>{Svg}</p>
+      <div style={{marginLeft: "auto", marginRight: "auto", padding: "2em"}}>{Svg}</div>
    </div>
   );``
 }
@@ -98,7 +97,7 @@ function Chart({title, Svg}: ChartItem) {
 
 export default function HomepageFeatures(): JSX.Element {
   return (
-    <section className="gradient" style= {{ overflowX: "hidden", width: "100%"}}>
+    <section className="gradient">
       <div className="row"
       style={{
         paddingTop: "100px",
@@ -135,13 +134,11 @@ export default function HomepageFeatures(): JSX.Element {
       </div>
 
             {/* Pepe Bill */}
-            {/* translate(-500px,-400px) */}
             <div style={{transform: "translate(-500px, -400px) rotate(-87deg)" }}>      
         <img src= {require('@site/static/img/pepe-bill.png').default} width="493" height="208" alt="JPEG Image"/>
       </div>
 
             {/* Pepe Bill */}
-            {/* translate(1000px,-500px)  */}
             <div style={{transform:  "translateX(100%) translate(-200px, -300px) rotate(-15deg)" }}>      
         <img src= {require('@site/static/img/pepe-bill.png').default} width="493" height="208" alt="JPEG Image"/>
       </div>

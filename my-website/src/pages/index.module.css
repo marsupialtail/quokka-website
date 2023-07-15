@@ -3,6 +3,7 @@
  * and scoped locally.
  */
 
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
@@ -15,3 +16,10 @@
     padding: 2rem;
   }
 }
+
+@media screen and (min-width: 996px) {
+  .column {
+    min-width: 40em;
+}
+}
+
