@@ -11,23 +11,23 @@
        url('@site/static/fonts/dmsans-regular-webfont.woff') format('woff')
 }
 
-html {
+.gradient {
   overflow-x: hidden;
   width: 100%;
 }
 
-/* @media screen and (min-width: 415px) {
+@media screen and (min-width: 643px) {
   .headline {
     min-width: 13em;
     font-size: 48px;
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 642px) {
   .headline {
     font-size: 10px;
   }
-} */
+}
 
 /* You can override the default Infima variables here. */
 :root {
