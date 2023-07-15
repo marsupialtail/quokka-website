@@ -89,7 +89,7 @@ function Chart({title, Svg}: ChartItem) {
   return (
     <div>
       <h3 style={{textAlign: 'center', padding: "100px"}} >{title}</h3>
-      <div style={{marginLeft: "auto", marginRight: "auto", width: "90%", padding: "2em"}}>{Svg}</div>
+      <div style={{marginLeft: "auto", marginRight: "auto", maxWidth: "100%", height: "auto", padding: "2em"}}>{Svg}</div>
    </div>
   );``
 }
