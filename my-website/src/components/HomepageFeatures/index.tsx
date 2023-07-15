@@ -89,7 +89,7 @@ function Chart({title, Svg}: ChartItem) {
   return (
     <div>
       <h3 style={{textAlign: 'center', padding: "100px"}} >{title}</h3>
-      <div style={{marginLeft: "auto", marginRight: "auto", maxWidth: "100%", height: "auto", padding: "2em"}}>{Svg}</div>
+      <div style={{marginLeft: "auto", marginRight: "auto", padding: "2em"}}>{Svg}</div>
    </div>
   );``
 }
@@ -123,7 +123,7 @@ export default function HomepageFeatures(): JSX.Element {
         <img src= {require('@site/static/img/pepe-bill.png').default} width="493" height="208" alt="JPEG Image"/>
       </div>
 
-          <div className="row" style={{textAlign: 'center'}}>
+          <div className="row" style={{textAlign: 'center', maxWidth: "100%", height: "auto"}}>
             {ChartList.map((props, idx) => (
                 <Chart key={idx} {...props} />
               ))}
